@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Form</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assert/css/reset.css">
+  <link rel="stylesheet" href="assert/css/base.css">
+  <link rel="stylesheet" href="assert/css/paymentForm.css">
+  <link rel="stylesheet" href="assert/css/accountSidebar.css">
+</head>
+<body>
+<div id="pageWrapper">
+
+  <!-- SIDEBAR -->
+  <div id="accountSidebar">
+
+    <!-- USER INFO -->
+    <div id="userBox">
+      <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" id="userAvatar">
+
+      <div id="userInfo">
+        <span id="usernameDisplay">user1</span>
+        <a href="#" id="editProfileBtn">
+          <i class="fa-solid fa-pen"></i> Sửa Hồ Sơ
+        </a>
+      </div>
+    </div>
+
+    <div class="sidebar-divider"></div>
+
+    <ul id="menuList">
+
+      <!-- TÀI KHOẢN CỦA TÔI -->
+      <li class="menu-category">
+
+        <a href="#" id="menuAccountMain">
+          <i class="fa-solid fa-user"></i> Tài Khoản Của Tôi
+        </a>
+
+        <!-- ✅ submenu phải nằm trong LI -->
+        <ul id="accountSubmenu" class="submenu">
+
+          <li class="menu-item">
+            <a href="info-user.html" id="menuProfile">Hồ Sơ</a>
+          </li>
+
+          <li class="menu-item active">
+            <a href="#" id="menuBank">Ngân Hàng</a>
+          </li>
+
+          <li class="menu-item">
+            <a href="#" id="menuAddress">Địa Chỉ</a>
+          </li>
+
+          <li class="menu-item">
+            <a href="formChangePass.html" id="menuPassword">Đổi Mật Khẩu</a>
+          </li>
+        </ul>
+
+      </li>
+
+      <!-- ĐƠN MUA -->
+      <li class="menu-category">
+        <a href="#" id="menuOrders">
+          <i class="fa-solid fa-bag-shopping"></i> Đơn Mua
+        </a>
+      </li>
+
+      <!-- VOUCHER -->
+      <li class="menu-category">
+        <a href="voucherDetail.html" id="menuVoucher">
+          <i class="fa-solid fa-ticket"></i> Kho Voucher
+        </a>
+      </li>
+
+    </ul>
+
+  </div>
+
+  <!-- CONTENT -->
+  <div id="contentArea">
+    <div class="bank-form" id="bankFormContainer">
+      <h2>Thêm Tài Khoản Ngân Hàng</h2>
+
+      <form id="bankForm">
+
+        <!-- TÊN NGÂN HÀNG -->
+        <div class="field" id="fieldBank">
+          <label for="bankSelect">Tên ngân hàng</label>
+          <select id="bankSelect">
+            <option value="">Chọn ngân hàng</option>
+            <option value="Vietcombank">Vietcombank</option>
+            <option value="VietinBank">VietinBank</option>
+            <option value="Techcombank">Techcombank</option>
+            <option value="BIDV">BIDV</option>
+          </select>
+        </div>
+
+        <!-- TÊN CHI NHÁNH -->
+        <div class="field" id="fieldBranch">
+          <label for="branchSelect">Tên chi nhánh</label>
+          <select id="branchSelect">
+            <option value="">Chọn chi nhánh</option>
+            <option value="TP.HCM">TP.HCM</option>
+            <option value="Hà Nội">Hà Nội</option>
+            <option value="Đà Nẵng">Đà Nẵng</option>
+          </select>
+        </div>
+
+        <!-- SỐ TÀI KHOẢN -->
+        <div class="field" id="fieldAccountNumber">
+          <label for="accountNumber">Số tài khoản</label>
+          <input type="text" id="accountNumber" placeholder="Nhập số tài khoản">
+        </div>
+
+        <!-- TÊN CHỦ TÀI KHOẢN -->
+        <div class="field" id="fieldOwnerName">
+          <label for="ownerName">Tên đầy đủ (VIẾT IN HOA, KHÔNG DẤU)</label>
+          <input type="text" id="ownerName" placeholder="NGUYEN VAN A">
+        </div>
+
+        <!-- CHECKBOX -->
+        <div class="checkbox" id="defaultField">
+          <input type="checkbox" id="defaultAccount">
+          <label for="defaultAccount">Đặt làm mặc định</label>
+        </div>
+
+        <!-- BUTTON -->
+        <div class="btn-group" id="btnGroup">
+          <button type="button" class="back" id="btnBack">TRỞ LẠI</button>
+          <button type="submit" class="submit" id="btnSubmit">Hoàn Thành</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+</div>
+
+
+
+<script src="js/paymentForm.js"></script>
+</body>
+</html>

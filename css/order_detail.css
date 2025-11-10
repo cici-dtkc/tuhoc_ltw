@@ -1,0 +1,274 @@
+/* ===== RESET & BASE ===== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+    background-color: #f7f8fa;
+    color: #222;
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 16px;
+}
+
+/* ===== CARD ===== */
+.card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    width: 100%;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+/* ===== ORDER HEADER ===== */
+.order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+}
+
+.order-id {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.meta {
+    font-size: 14px;
+    color: #666;
+    margin-top: 4px;
+}
+
+.status-pill {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+    font-size: 13px;
+}
+
+/* ===== TIMELINE ===== */
+.timeline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin: 30px 0 25px 0;
+    padding: 0 15px;
+}
+
+.step {
+    flex: 1;
+    text-align: center;
+    position: relative;
+}
+
+.step .dot {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 auto 8px;
+    transition: all 0.3s ease;
+}
+
+.step .small {
+    font-size: 14px;
+    color: #777;
+    transition: color 0.3s ease, font-weight 0.3s ease;
+}
+
+.timeline .step.active {
+    color: #2563eb;
+    font-weight: 500;
+}
+
+.step.active .small {
+    color: #007bff;
+    font-weight: 600;
+}
+
+.step:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    width: 100%;
+    height: 3px;
+    background-color: #ccc;
+    z-index: -1;
+    transform: translateX(50%);
+    transition: background-color 0.3s;
+}
+
+.step.active:not(:last-child)::after {
+    background-color: #007bff;
+}
+
+/* ===== ITEMS ===== */
+.items {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+}
+
+.thumb img {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.item-info {
+    flex: 1;
+}
+
+.item-info .name {
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.variant, .small {
+    font-size: 14px;
+    color: #666;
+}
+
+.price-qty {
+    text-align: right;
+}
+
+.price {
+    font-weight: 600;
+    color: #222;
+}
+
+.qty {
+    font-size: 14px;
+    color: #777;
+}
+
+/* ===== TOTALS ===== */
+.totals {
+    border-top: 1px solid #eee;
+    padding-top: 16px;
+}
+
+.totals .row {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+}
+
+.totals .row.total-amount {
+    font-weight: 600;
+    font-size: 16px;
+    border-top: 1px dashed #ddd;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.btn {
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 14px;
+}
+
+.btn-ghost {
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+.btn-ghost:hover {
+    background: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+.note {
+    font-size: 13px;
+    color: #666;
+    margin-top: 8px;
+}
+
+/* ===== RIGHT SIDEBAR ===== */
+.right {
+    width: 340px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.address .muted {
+    color: #666;
+    font-size: 14px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #fff;
+}
+
+.badge.unpaid {
+    background-color: #ff9800;
+}
+
+.badge.paid {
+    background-color: #4caf50;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .timeline {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .step:not(:last-child)::after {
+        display: none;
+    }
+}

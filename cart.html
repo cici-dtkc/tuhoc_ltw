@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giỏ Hàng</title>
+    <link rel="stylesheet" href="assert/css/base.css">
+    <!--    <link rel="stylesheet" href="assert/css/reset.css">-->
+    <link rel="stylesheet" href="assert/css/cart.css">
+</head>
+<body>
+<div class="cart-wrap">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <button id="addProduct" class="round-black-btn">Thêm sản phẩm</button>
+                <div class="table-cart">
+                    <table>
+                        <thead id="cart-header">
+                        <tr>
+                            <th><input type="checkbox" id="selectAll"></th>
+                            <th>Sản Phẩm</th>
+                            <th>Số Lượng</th>
+                            <th>Thành Tiền</th>
+                            <th></th>
+                        </tr>
+                        </thead>
+                        <tbody id="cart-body">
+                        <tr id="empty-row">
+                            <td colspan="4" class="empty-cart">
+                                <h3> Không có sản phẩm nào được thêm vào giỏ hàng </h3>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!--            PHAN TONG TIEN-->
+            <div class="col-lg-4">
+                <div class="beta">
+                    <div class="coupon-box">
+                        <form action="#" method="get" accept-charset="utf-8">
+                            <div class="coupon-input">
+                                <input type="text" name="coupon" placeholder="Mã Khuyến Mãi">
+                                <button type="submit" class="round-black-btn">Áp Dụng</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="cart-totals">
+                        <form action="#" method="get" accept-charset="utf-8">
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <td>Tạm Tính:</td>
+                                    <td class="subtotal" id="sub-total"></td>
+                                </tr>
+                                <tr>
+                                    <td>Giảm Giá</td>
+                                    <td class="discount" id="discount"></td>
+                                </tr>
+                                <tr class="total-row">
+                                    <td>Tổng Tiền:</td>
+                                    <td class="price-total" id="price-total"></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <div class="btn-cart-totals">
+                                <a href="checkout.html" class="update round-black-btn" title="">Thanh Toán</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/cart.js"></script>
+</body>
+</html>

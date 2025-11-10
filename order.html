@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Đơn Mua — Mô phỏng</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assert/css/reset.css">
+  <link rel="stylesheet" href="assert/css/base.css">
+  <link rel="stylesheet" href="assert/css/accountSidebar.css">
+  <link rel="stylesheet" href="assert/css/order.css">
+</head>
+<body>
+<div id="pageWrapper">
+<!-- SIDEBAR -->
+<div id="accountSidebar">
+
+  <!-- USER INFO -->
+  <div id="userBox">
+    <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" id="userAvatar">
+
+    <div id="userInfo">
+      <span id="usernameDisplay">user1</span>
+      <a href="#" id="editProfileBtn">
+        <i class="fa-solid fa-pen"></i> Sửa Hồ Sơ
+      </a>
+    </div>
+  </div>
+
+  <div class="sidebar-divider"></div>
+
+  <ul id="menuList">
+
+    <!-- TÀI KHOẢN CỦA TÔI -->
+    <li class="menu-category">
+
+      <a href="#" id="menuAccountMain">
+        <i class="fa-solid fa-user"></i> Tài Khoản Của Tôi
+      </a>
+
+      <!-- ✅ submenu phải nằm trong LI -->
+      <ul id="accountSubmenu" class="submenu">
+
+        <li class="menu-item">
+          <a href="info-user.html" id="menuProfile">Hồ Sơ</a>
+        </li>
+
+        <li class="menu-item active">
+          <a href="#" id="menuBank">Ngân Hàng</a>
+        </li>
+
+        <li class="menu-item">
+          <a href="#" id="menuAddress">Địa Chỉ</a>
+        </li>
+
+        <li class="menu-item">
+          <a href="formChangePass.html" id="menuPassword">Đổi Mật Khẩu</a>
+        </li>
+      </ul>
+
+    </li>
+
+    <!-- ĐƠN MUA -->
+    <li class="menu-category">
+      <a href="#" id="menuOrders">
+        <i class="fa-solid fa-bag-shopping"></i> Đơn Mua
+      </a>
+    </li>
+
+    <!-- VOUCHER -->
+    <li class="menu-category">
+      <a href="voucherDetail.html" id="menuVoucher">
+        <i class="fa-solid fa-ticket"></i> Kho Voucher
+      </a>
+    </li>
+
+  </ul>
+
+</div>
+<div class="container">
+  <!-- Order 1 -->
+  <div class="order-card">
+    <div class="order-top">
+      <div class="shop-left">
+        <span class="badge favorite">Yêu thích</span>
+        <span class="shop-name">Bảo Nhi Store 88 Chuyên Sỉ</span>
+        <button class="btn-outline small">Chat</button>
+        <button class="btn-outline small">Xem Shop</button>
+      </div>
+      <div class="shop-right">
+        <span class="delivery-success">Giao hàng thành công</span>
+        <a class="rate-link">ĐÁNH GIÁ</a>
+      </div>
+    </div>
+
+    <div class="order-body">
+      <div class="item">
+        <img src="https://via.placeholder.com/80x80.png?text=IMG" alt="sản phẩm" />
+        <div class="item-info">
+          <h3 class="item-title">Túi Chườm Nóng Lạnh Vải Nhung Mềm Mại Đa Năng Thoải Mái Giảm Đau...</h3>
+          <div class="item-variant">Phân loại hàng: NÂU 450ML</div>
+          <div class="item-qty">x1</div>
+        </div>
+        <div class="item-price">
+          <div class="old-price">50.000₫</div>
+          <div class="new-price">29.499₫</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="order-footer">
+      <div class="total">Thành tiền: <span class="total-value">29.499₫</span></div>
+      <div class="actions">
+        <button class="btn primary">Mua Lại</button>
+        <button class="btn">Liên Hệ Người Bán</button>
+        <button class="btn">Xem Đánh Giá Shop</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Order 2 -->
+  <div class="order-card">
+    <div class="order-top">
+      <div class="shop-left">
+        <span class="shop-icon">🏪</span>
+        <span class="shop-name">AMANCER</span>
+        <button class="btn-outline small">Chat</button>
+        <button class="btn-outline small">Xem Shop</button>
+      </div>
+      <div class="shop-right">
+        <span class="delivery-success">Giao hàng thành công</span>
+        <a class="rate-link">ĐÁNH GIÁ</a>
+      </div>
+    </div>
+
+    <div class="order-body">
+      <!-- item 1 -->
+      <div class="item">
+        <img src="https://via.placeholder.com/80x80.png?text=IMG" alt="sản phẩm" />
+        <div class="item-info">
+          <h3 class="item-title">Áo Thun Nữ Cổ Tròn Tay Ngắn Kẻ Sọc - Áo Thun Nữ tay ngắn Amanecer</h3>
+          <div class="item-variant">Phân loại hàng: Sọc xđen + xđen,XL (55-65kg)</div>
+          <div class="item-qty">x1</div>
+        </div>
+        <div class="item-price">
+          <div class="old-price">100.000₫</div>
+          <div class="new-price">55.000₫</div>
+        </div>
+      </div>
+
+      <!-- item 2 -->
+      <div class="item">
+        <img src="https://via.placeholder.com/80x80.png?text=IMG" alt="sản phẩm" />
+        <div class="item-info">
+          <h3 class="item-title">Áo Thun Nữ Cổ Tròn Tay Ngắn Kẻ Sọc - Áo Thun Nữ tay ngắn Amanecer</h3>
+          <div class="item-variant">Phân loại hàng: Sọc xám đậm + xám,XL (55-65kg)</div>
+          <div class="item-qty">x1</div>
+        </div>
+        <div class="item-price">
+          <div class="old-price">100.000₫</div>
+          <div class="new-price">55.000₫</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="order-footer">
+      <div class="total">Thành tiền: <span class="total-value">99.000₫</span></div>
+      <div class="actions">
+        <button class="btn primary">Mua Lại</button>
+        <button class="btn">Liên Hệ Người Bán</button>
+        <div class="more">
+          <button class="btn">Thêm ▾</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<script src="js/"></script>
+</body>
+</html>
