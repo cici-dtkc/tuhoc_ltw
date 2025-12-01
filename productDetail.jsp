@@ -8,10 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chi tiết sản phẩm - Cửa hàng điện thoại</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/reset.css">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/base.css">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/header.css">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/productDetail.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assert/css/reset.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assert/css/base.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assert/css/header.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assert/css/productDetail.css">
 </head>
 <body>
 <%
@@ -359,7 +359,7 @@
         </div>
     </section>
 </div>
-<script src="${pageContext.request.contextPath}/js/header.js"></script>
-<script src="${pageContext.request.contextPath}/js/productDetail.js"></script>
+<script src="${pageContext.request.contextPath}/assert/js/header.js"></script>
+<script src="${pageContext.request.contextPath}/assert/js/productDetail.js"></script>
 </body>
 </html>

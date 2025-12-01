@@ -7,8 +7,8 @@
     <meta charset="UTF-8">
     <title>Danh Sách Sản Phẩm - Cửa hàng điện thoại</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/base.css">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/listproduct.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assert/css/base.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assert/css/listproduct.css">
 </head>
 <body>
 <%
@@ -246,6 +246,6 @@
         <span id="loadMoreSpinner" class="spinner" style="display:none">Đang tải...</span>
     </div>
 </main>
-<script src="${pageContext.request.contextPath}/js/listProduct.js"></script>
+<script src="${pageContext.request.contextPath}/assert/js/listProduct.js"></script>
 </body>
 </html>

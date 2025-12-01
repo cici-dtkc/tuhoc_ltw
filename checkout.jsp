@@ -8,8 +8,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thanh toán - Cửa hàng điện thoại</title>
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/checkout.css">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/cart.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assert/css/checkout.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assert/css/cart.css">
 </head>
 <body>
 <%

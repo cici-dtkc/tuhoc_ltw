@@ -7,10 +7,10 @@
     <meta charset="UTF-8">
     <title>Tổng quan - Quản trị</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/reset.css" />
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/base.css" />
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/dashboardAdmin.css" />
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/sidebarAdmin.css" />
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assert/css/reset.css" />
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assert/css/base.css" />
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assert/css/dashboardAdmin.css" />
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assert/css/sidebarAdmin.css" />
 </head>
 <body>
 <%
@@ -222,7 +222,7 @@
     </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script src="${pageContext.request.contextPath}/js/sidebarAdmin.js"></script>
-<script src="${pageContext.request.contextPath}/js/dashboardAdmin.js"></script>
+<script src="${pageContext.request.contextPath}/assert/js/sidebarAdmin.js"></script>
+<script src="${pageContext.request.contextPath}/assert/js/dashboardAdmin.js"></script>
 </body>
 </html>

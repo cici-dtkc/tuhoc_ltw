@@ -7,11 +7,11 @@
     <meta charset="UTF-8">
     <title>Quản lý sản phẩm - Admin</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/reset.css">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/base.css">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/vouchersAdmin.css">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/sidebarAdmin.css">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/productAdmin.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assert/css/reset.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assert/css/base.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assert/css/vouchersAdmin.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assert/css/sidebarAdmin.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assert/css/productAdmin.css">
 </head>
 <body>
 <%
@@ -139,7 +139,7 @@
         </div>
     </div>
 </div>
-<script src="${pageContext.request.contextPath}/js/sidebarAdmin.js"></script>
-<script src="${pageContext.request.contextPath}/js/productAdmin.js"></script>
+<script src="${pageContext.request.contextPath}/assert/js/sidebarAdmin.js"></script>
+<script src="${pageContext.request.contextPath}/assert/js/productAdmin.js"></script>
 </body>
 </html>

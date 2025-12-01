@@ -6,9 +6,9 @@
     <meta charset="UTF-8">
     <title>Hồ Sơ Của Tôi - Cửa hàng điện thoại</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/reset.css">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/base.css">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/info-user.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assert/css/reset.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assert/css/base.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assert/css/info-user.css">
 </head>
 <body>
 <%
@@ -97,6 +97,6 @@
         </div>
     </div>
 </div>
-<script src="${pageContext.request.contextPath}/js/info-user.js"></script>
+<script src="${pageContext.request.contextPath}/assert/js/info-user.js"></script>
 </body>
 </html>

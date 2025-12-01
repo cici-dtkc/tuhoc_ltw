@@ -8,9 +8,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
     <title>Tạo tài khoản - Cửa hàng điện thoại</title>
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/reset.css">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/base.css">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/register.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assert/css/reset.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assert/css/base.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assert/css/register.css">
 </head>
 <body>
     <div id="register-form">
@@ -82,7 +82,7 @@
             </div>
         </form>
     </div>
-<script src="${pageContext.request.contextPath}/js/register.js"></script>
+<script src="${pageContext.request.contextPath}/assert/js/register.js"></script>
 <script>
     function changeTypePass(){
         let password = document.getElementById('password');

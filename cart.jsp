@@ -6,8 +6,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Giỏ Hàng - Cửa hàng điện thoại</title>
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/base.css">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/cart.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assert/css/base.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assert/css/cart.css">
 </head>
 <body>
 <%
@@ -141,6 +141,6 @@
         </div>
     </div>
 </div>
-<script src="${pageContext.request.contextPath}/js/cart.js"></script>
+<script src="${pageContext.request.contextPath}/assert/js/cart.js"></script>
 </body>
 </html>

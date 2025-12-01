@@ -8,10 +8,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Đơn Mua - Cửa hàng điện thoại</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/reset.css">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/base.css">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/accountSidebar.css">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/order.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assert/css/reset.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assert/css/base.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assert/css/accountSidebar.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assert/css/order.css">
 </head>
 <body>
 <%
@@ -163,6 +163,6 @@
         </c:forEach>
     </div>
 </div>
-<script src="${pageContext.request.contextPath}/js/order.js"></script>
+<script src="${pageContext.request.contextPath}/assert/js/order.js"></script>
 </body>
 </html>

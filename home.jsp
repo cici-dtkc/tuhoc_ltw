@@ -25,20 +25,17 @@
     <!-- Slider Banner -->
     <section id="banner-slider" class="slider-banner">
         <div id="slider-container" class="slider">
-            <%-- Dữ liệu mẫu cho slider --%>
-            <c:set var="banners" value="${['banner-1.png', 'banner-2.png', 'banner-3.png', 'banner-4.png']}" />
-            
             <div class="slide active" id="slide-1">
-                <a href="#"><img src="${pageContext.request.contextPath}/assert/img/banner-1.png" alt="Banner 1"></a>
+                <a href="${pageContext.request.contextPath}/listproduct.jsp"><img src="${pageContext.request.contextPath}/assert/img/banner-1.png" alt="Banner khuyến mãi iPhone"></a>
             </div>
             <div class="slide" id="slide-2">
-                <a href="#"><img src="${pageContext.request.contextPath}/assert/img/banner-3.png" alt="Banner 2"></a>
+                <a href="${pageContext.request.contextPath}/listproduct.jsp"><img src="${pageContext.request.contextPath}/assert/img/banner-3.png" alt="Banner Samsung Galaxy"></a>
             </div>
             <div class="slide" id="slide-3">
-                <a href="#"><img src="${pageContext.request.contextPath}/assert/img/banner-2.png" alt="Banner 3"></a>
+                <a href="${pageContext.request.contextPath}/listproduct.jsp"><img src="${pageContext.request.contextPath}/assert/img/banner-2.png" alt="Banner phụ kiện"></a>
             </div>
             <div class="slide" id="slide-4">
-                <a href="#"><img src="${pageContext.request.contextPath}/assert/img/banner-4.png" alt="Banner 4"></a>
+                <a href="${pageContext.request.contextPath}/listproduct.jsp"><img src="${pageContext.request.contextPath}/assert/img/banner-4.png" alt="Banner khuyến mãi"></a>
             </div>
 
             <!-- Navigation buttons -->
@@ -54,7 +51,6 @@
         <div class="product-list">
             <%-- Dữ liệu mẫu sản phẩm nổi bật --%>
             <%
-                // Dữ liệu mẫu cho sản phẩm nổi bật
                 java.util.List<java.util.Map<String, Object>> featuredProducts = new java.util.ArrayList<>();
                 
                 java.util.Map<String, Object> product1 = new java.util.HashMap<>();
