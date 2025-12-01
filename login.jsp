@@ -29,7 +29,7 @@
             <form id="login-form" action="${pageContext.request.contextPath}/LoginServlet" method="post">
                 <div class="form-group-one">
                     <i class="fa fa-user"></i>
-                    <input type="text" id="login-username" name="username" class="form-control" placeholder="Tên đăng nhập\email" required />
+                    <input type="text" id="login-username" name="username" class="form-control" placeholder="Tên đăng nhập hoặc email" required />
                 </div>
 
                 <div class="form-group-one">

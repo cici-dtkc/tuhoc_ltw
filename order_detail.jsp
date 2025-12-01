@@ -66,9 +66,18 @@
                 <div class="meta">Ngày đặt: <strong id="order-date"><c:out value="${order.date}" /></strong> • Người nhận: <span id="order-name"><c:out value="${order.customerName}" /></span></div>
             </div>
             <div style="text-align:right">
-                <div id="paid-badge" class="status-pill ${order.paid ? 'paid' : ''}" aria-live="polite">
-                    <span id="paid-text">${order.paid ? 'Đã thanh toán' : 'Chưa thanh toán'}</span>
-                </div>
+                <c:choose>
+                    <c:when test="${order.paid}">
+                        <div id="paid-badge" class="status-pill paid" aria-live="polite">
+                            <span id="paid-text">Đã thanh toán</span>
+                        </div>
+                    </c:when>
+                    <c:otherwise>
+                        <div id="paid-badge" class="status-pill" aria-live="polite">
+                            <span id="paid-text">Chưa thanh toán</span>
+                        </div>
+                    </c:otherwise>
+                </c:choose>
                 <div class="muted" style="font-size:12px;margin-top:6px" id="order-status-small">Trạng thái: <strong id="order-status"><c:out value="${order.statusText}" /></strong></div>
             </div>
         </header>
